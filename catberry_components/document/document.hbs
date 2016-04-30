@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+<!--
+	The following works:
+	<cat-test   class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600" cat-store="Main"></cat-test>
+-->
+<!--
+	The following doesn't:
+-->
+    <cat-test cat-store="Main"></cat-test>
+    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" class="demo-avatar">
+            <div class="demo-avatar-dropdown">
+                <span>hello@example.com</span>
+                <div class="mdl-layout-spacer"></div>
+                <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" role="presentation">arrow_drop_down</i>
+                    <span class="visuallyhidden">Accounts</span>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                    <li class="mdl-menu__item">hello@example.com</li>
+                    <li class="mdl-menu__item">info@example.com</li>
+                    <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+                </ul>
+            </div>
+        </header>
+        ...
+
+    </div>
+    <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+				<cat-hello-world id="unique" cat-store="Main"></cat-hello-world>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
+
